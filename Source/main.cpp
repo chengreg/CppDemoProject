@@ -1,8 +1,13 @@
 #include <iostream>
+#include "AutoUpdater.h"
 using namespace std;
 
 int main()
 {
-	cout << "hello world" << endl;
+    // 检测更新
+    AutoUpdater updater("config.ini");
+    updater.checkForUpdates();
+
+
 	return 0;
 }
