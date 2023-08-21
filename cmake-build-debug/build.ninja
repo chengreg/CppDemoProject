@@ -47,13 +47,13 @@ cmake_ninja_workdir = /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/
 #############################################
 # Order-only phony target for CppDemoProject
 
-build cmake_object_order_depends_target_CppDemoProject: phony || CMakeFiles/CppDemoProject.dir
+build cmake_object_order_depends_target_CppDemoProject: phony || cmake_object_order_depends_target_Editor
 
 build CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o: CXX_COMPILER__CppDemoProject_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/Source/Network/AutoUpdater.cpp || cmake_object_order_depends_target_CppDemoProject
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
   DEP_FILE = CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o.d
   FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   OBJECT_FILE_DIR = CMakeFiles/CppDemoProject.dir/Source/Network
 
@@ -61,7 +61,7 @@ build CMakeFiles/CppDemoProject.dir/Source/main.cpp.o: CXX_COMPILER__CppDemoProj
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
   DEP_FILE = CMakeFiles/CppDemoProject.dir/Source/main.cpp.o.d
   FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   OBJECT_FILE_DIR = CMakeFiles/CppDemoProject.dir/Source
 
@@ -69,7 +69,7 @@ build CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o: CXX_COMPILER__CppDemo
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
   DEP_FILE = CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o.d
   FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   OBJECT_FILE_DIR = CMakeFiles/CppDemoProject.dir/Tests
 
@@ -81,9 +81,9 @@ build CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o: CXX_COMPILER__CppDemo
 #############################################
 # Link the executable /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject
 
-build /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject: CXX_EXECUTABLE_LINKER__CppDemoProject_Debug CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o CMakeFiles/CppDemoProject.dir/Source/main.cpp.o CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o | /opt/homebrew/lib/libboost_system-mt.dylib /opt/homebrew/lib/libboost_filesystem-mt.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd /Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib /opt/homebrew/lib/libboost_atomic-mt.dylib
+build /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject: CXX_EXECUTABLE_LINKER__CppDemoProject_Debug CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o CMakeFiles/CppDemoProject.dir/Source/main.cpp.o CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o | /opt/homebrew/lib/libboost_system-mt.dylib /opt/homebrew/lib/libboost_filesystem-mt.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd /Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib Source/Editor/libEditor.a /opt/homebrew/lib/libboost_atomic-mt.dylib /opt/homebrew/lib/libglfw.3.3.dylib || Source/Editor/libEditor.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql  /opt/homebrew/lib/libboost_system-mt.dylib  /opt/homebrew/lib/libboost_filesystem-mt.dylib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd  /Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib  /opt/homebrew/lib/libboost_atomic-mt.dylib
+  LINK_LIBRARIES = -Wl,-rpath,/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libboost_system-mt.dylib  /opt/homebrew/lib/libboost_filesystem-mt.dylib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd  /Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib  Source/Editor/libEditor.a  /opt/homebrew/lib/libboost_atomic-mt.dylib  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker Cocoa  -Xlinker -framework -Xlinker IOKit  -Xlinker -framework -Xlinker CoreVideo  /opt/homebrew/lib/libglfw.3.3.dylib
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -114,9 +114,131 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/chengangqiang/dev/CppDemoProject/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Editor
+
+
+#############################################
+# Order-only phony target for Editor
+
+build cmake_object_order_depends_target_Editor: phony || Source/Editor/CMakeFiles/Editor.dir
+
+build Source/Editor/CMakeFiles/Editor.dir/Editor.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/Source/Editor/Editor.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/Editor.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/imgui.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_demo.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/imgui_demo.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_demo.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_draw.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/imgui_draw.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_draw.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_tables.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/imgui_tables.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_tables.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_widgets.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/imgui_widgets.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_widgets.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_glfw.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends
+
+build Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__Editor_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Editor
+  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W
+  DEP_FILE = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_opengl3.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I/opt/local/include -I/Users/chengangqiang/dev/CppDemoProject/Source/Editor/libs/imgui-1.89.8/examples/libs/gl3w -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8 -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/imgui-1.89.8/backends -isystem /opt/homebrew/include
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  OBJECT_FILE_DIR = Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Editor
+
+
+#############################################
+# Link the static library Source/Editor/libEditor.a
+
+build Source/Editor/libEditor.a: CXX_STATIC_LIBRARY_LINKER__Editor_Debug Source/Editor/CMakeFiles/Editor.dir/Editor.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_demo.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_draw.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_tables.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_widgets.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_glfw.cpp.o Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_opengl3.cpp.o || /opt/homebrew/lib/libglfw.3.3.dylib
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Source/Editor/CMakeFiles/Editor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Source/Editor/libEditor.a
+  TARGET_PDB = Editor.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Source/Editor/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/Source/Editor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Source/Editor/edit_cache: phony Source/Editor/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Source/Editor/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/Source/Editor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/chengangqiang/dev/CppDemoProject -B/Users/chengangqiang/dev/CppDemoProject/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Source/Editor/rebuild_cache: phony Source/Editor/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build CppDemoProject: phony /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject
+
+build Editor: phony Source/Editor/libEditor.a
+
+build libEditor.a: phony Source/Editor/libEditor.a
 
 # =============================================================================
 # Folder targets.
@@ -126,7 +248,14 @@ build CppDemoProject: phony /Users/chengangqiang/dev/CppDemoProject/Build/Binari
 #############################################
 # Folder: /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug
 
-build all: phony /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject
+build all: phony /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject Source/Editor/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/Source/Editor
+
+build Source/Editor/all: phony Source/Editor/libEditor.a
 
 # =============================================================================
 # Built-in targets
@@ -135,14 +264,14 @@ build all: phony /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoP
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/chengangqiang/dev/CppDemoProject/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.82.0.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config-version.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config-version.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-static.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-static.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/chengangqiang/dev/CppDemoProject/CMakeLists.txt /Users/chengangqiang/dev/CppDemoProject/Source/Editor/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.82.0.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config-version.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config-version.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-static.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-static.cmake /opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake /opt/homebrew/lib/cmake/glfw3/glfw3ConfigVersion.cmake /opt/homebrew/lib/cmake/glfw3/glfw3Targets-release.cmake /opt/homebrew/lib/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/chengangqiang/dev/CppDemoProject/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.82.0.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config-version.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config-version.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-static.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-static.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake /Users/chengangqiang/dev/CppDemoProject/CMakeLists.txt /Users/chengangqiang/dev/CppDemoProject/Source/Editor/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.82.0.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config-version.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/boost_atomic-config.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_atomic-1.82.0/libboost_atomic-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config-version.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/boost_filesystem-config.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.82.0/libboost_filesystem-variant-static.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.82.0/libboost_system-variant-static.cmake /opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake /opt/homebrew/lib/cmake/glfw3/glfw3ConfigVersion.cmake /opt/homebrew/lib/cmake/glfw3/glfw3Targets-release.cmake /opt/homebrew/lib/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

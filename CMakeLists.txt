@@ -22,9 +22,15 @@ target_include_directories(CppDemoProject PRIVATE
         Include
         Include/Network
         Tests
+        Source/Editor
         ThirdParty/QuantLib-1.31.1
 )
 
+# 设置一个变量来存储主模块的CMakeLists.txt路径地址
+set(MAIN_CMAKELISTS_TEXT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
+# 添加子目录以构建子模块
+add_subdirectory(Source/Editor)
 
 # 设置构建路径为Build目录
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/Build)
@@ -44,10 +50,12 @@ find_package(CURL REQUIRED)
 include_directories(
         ${Boost_INCLUDE_DIRS}
         ${CURL_INCLUDE_DIRS}
+
 )
 # 链接 Boost 和 libcurl 库
 target_link_libraries(CppDemoProject
         ${Boost_LIBRARIES}
         ${CURL_LIBRARIES}
         ${CMAKE_SOURCE_DIR}/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib
+        Editor
 )

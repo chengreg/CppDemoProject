@@ -1,9 +1,17 @@
 # ninja log v5
-8	499	1692628094514055178	CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o	2dd18e8fa72d70ab
-0	62	1692628882298044928	build.ninja	fc511f3fc72d6207
-8	494	1692628094506981984	CMakeFiles/CppDemoProject.dir/Source/main.cpp.o	85f95cdb1d0aef6b
-8	43	1692628858035267945	/Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject	6a84cd88527efc80
-8	878	1692628094891366718	CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o	2325c2d8fc5495e6
-1	63	1692628882298044928	build.ninja	fc511f3fc72d6207
-9	262	1692629023414220917	CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o	2dd18e8fa72d70ab
-262	290	1692629023444183249	/Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject	6a84cd88527efc80
+14	389	1692632734006088339	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_widgets.cpp.o	ea1d86f53476e974
+217	326	1692633133664835368	/Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject	d7204c87fcd71d3f
+14	304	1692632733921342616	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_draw.cpp.o	dddef76116222021
+34	329	1692632733944625209	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_glfw.cpp.o	106d3b6210ec9c40
+0	68	1692633175306703766	build.ninja	fc511f3fc72d6207
+226	287	1692632733904687610	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/backends/imgui_impl_opengl3.cpp.o	ff7abb8d0f0c8a3f
+61	97	1692632913735205000	Source/Editor/libEditor.a	acec6729da0539aa
+17	61	1692632913697539984	Source/Editor/CMakeFiles/Editor.dir/Editor.cpp.o	8d18171aa4642bda
+15	481	1692632734097795228	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui.cpp.o	4b761df43a058863
+15	289	1692633105323712120	CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o	a2a31bc2324fe39
+15	295	1692632733910535247	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_demo.cpp.o	1ee352e4a8289ac8
+17	216	1692633133555260018	CMakeFiles/CppDemoProject.dir/Source/main.cpp.o	d2a6182732a844ff
+15	226	1692632733842165451	Source/Editor/CMakeFiles/Editor.dir/__/__/ThirdParty/imgui-1.89.8/imgui_tables.cpp.o	32a5d90d2b3e16c6
+15	607	1692633105640032863	CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o	9fb008af3a50bf08
+16	229	1692633178386436489	CMakeFiles/CppDemoProject.dir/Source/main.cpp.o	d2a6182732a844ff
+229	347	1692633178505456409	/Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject	d7204c87fcd71d3f

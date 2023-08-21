@@ -1,3 +1,6 @@
 /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/CMakeFiles/CppDemoProject.dir
 /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/Source/Editor/CMakeFiles/Editor.dir
+/Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/Source/Editor/CMakeFiles/edit_cache.dir
+/Users/chengangqiang/dev/CppDemoProject/cmake-build-debug/Source/Editor/CMakeFiles/rebuild_cache.dir
