@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/LatentModel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/LatentModel/LatentModel"
+			],
+			"targetId" : "LatentModel::@03a92fde525ec640f715",
+			"targetIndex" : 31,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/LatentModel",
+		"source" : "Examples/LatentModel"
+	}
+}

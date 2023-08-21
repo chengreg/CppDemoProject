@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/ConvertibleBonds/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/ConvertibleBonds/ConvertibleBonds"
+			],
+			"targetId" : "ConvertibleBonds::@174e3ccc01a628c86259",
+			"targetIndex" : 15,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/ConvertibleBonds",
+		"source" : "Examples/ConvertibleBonds"
+	}
+}

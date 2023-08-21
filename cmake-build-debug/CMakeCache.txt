@@ -247,6 +247,9 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
 
+//The directory containing a CMake configuration file for QuantLib.
+QuantLib_DIR:PATH=QuantLib_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for boost_asio.
 boost_asio_DIR:PATH=boost_asio_DIR-NOTFOUND
 

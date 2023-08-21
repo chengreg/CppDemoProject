@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/Repo/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/Repo/Repo"
+			],
+			"targetId" : "Repo::@06a56f180f5ea0e872b8",
+			"targetIndex" : 46,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/Repo",
+		"source" : "Examples/Repo"
+	}
+}

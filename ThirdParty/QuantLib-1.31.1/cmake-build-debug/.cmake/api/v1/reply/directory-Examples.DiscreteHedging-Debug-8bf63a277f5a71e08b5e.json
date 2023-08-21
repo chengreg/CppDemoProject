@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/DiscreteHedging/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/DiscreteHedging/DiscreteHedging"
+			],
+			"targetId" : "DiscreteHedging::@ac9d532c5630c6b91d7a",
+			"targetIndex" : 16,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/DiscreteHedging",
+		"source" : "Examples/DiscreteHedging"
+	}
+}

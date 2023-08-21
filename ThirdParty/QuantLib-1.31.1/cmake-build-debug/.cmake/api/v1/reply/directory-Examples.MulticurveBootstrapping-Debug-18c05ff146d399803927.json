@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/MulticurveBootstrapping/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/MulticurveBootstrapping/MulticurveBootstrapping"
+			],
+			"targetId" : "MulticurveBootstrapping::@101606f2ec111b297236",
+			"targetIndex" : 33,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/MulticurveBootstrapping",
+		"source" : "Examples/MulticurveBootstrapping"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/Gaussian1dModels/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/Gaussian1dModels/Gaussian1dModels"
+			],
+			"targetId" : "Gaussian1dModels::@249ff83782f0845c17ea",
+			"targetIndex" : 29,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/Gaussian1dModels",
+		"source" : "Examples/Gaussian1dModels"
+	}
+}

@@ -1,13 +1,12 @@
 #include <iostream>
-#include "AutoUpdater.h"
+#include "test_libs.h"
+
 using namespace std;
+
 
 int main()
 {
-    // 检测更新
-    AutoUpdater updater("config.ini");
-    updater.checkForUpdates();
-
+    test_Quantlib();
 
 	return 0;
 }

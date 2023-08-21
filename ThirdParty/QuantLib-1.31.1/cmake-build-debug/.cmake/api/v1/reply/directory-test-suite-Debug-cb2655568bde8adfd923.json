@@ -1,0 +1,63 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"test-suite/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 401,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 421,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"test-suite/quantlib-test-suite"
+			],
+			"targetId" : "ql_test_suite::@3809b945544b7633d667",
+			"targetIndex" : 49,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"test-suite/quantlib-benchmark"
+			],
+			"targetId" : "ql_benchmark::@3809b945544b7633d667",
+			"targetIndex" : 47,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "test-suite",
+		"source" : "test-suite"
+	}
+}

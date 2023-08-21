@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/MultidimIntegral/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/MultidimIntegral/MultidimIntegral"
+			],
+			"targetId" : "MultidimIntegral::@d715c3d6ad3ab2d788fb",
+			"targetIndex" : 34,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/MultidimIntegral",
+		"source" : "Examples/MultidimIntegral"
+	}
+}

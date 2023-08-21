@@ -3,18 +3,27 @@ cmake_minimum_required(VERSION 3.10)
 # 设置项目名称
 project(CppDemoProject)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 # 获取所有源文件
 file(GLOB SOURCES
         ./Source/Network/*.cpp
         ./Source/*.cpp
+        ./Tests/*.cpp
 )
 
 # 添加可执行文件
 add_executable(CppDemoProject ${SOURCES})
 
 # 包含头文件目录
-target_include_directories(CppDemoProject PRIVATE Include)
-target_include_directories(CppDemoProject PRIVATE Include/Network)
+target_include_directories(CppDemoProject PRIVATE
+        Include
+        Include/Network
+        Tests
+        ThirdParty/QuantLib-1.31.1
+)
 
 
 # 设置构建路径为Build目录
@@ -30,6 +39,7 @@ find_package(Boost REQUIRED COMPONENTS system filesystem)
 # 添加 libcurl 头文件路径
 find_package(CURL REQUIRED)
 
+
 # 添加头文件路径
 include_directories(
         ${Boost_INCLUDE_DIRS}
@@ -39,4 +49,5 @@ include_directories(
 target_link_libraries(CppDemoProject
         ${Boost_LIBRARIES}
         ${CURL_LIBRARIES}
+        ${CMAKE_SOURCE_DIR}/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib
 )

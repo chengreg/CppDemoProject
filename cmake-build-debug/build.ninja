@@ -52,18 +52,26 @@ build cmake_object_order_depends_target_CppDemoProject: phony || CMakeFiles/CppD
 build CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o: CXX_COMPILER__CppDemoProject_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/Source/Network/AutoUpdater.cpp || cmake_object_order_depends_target_CppDemoProject
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
   DEP_FILE = CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -isystem /opt/homebrew/include
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   OBJECT_FILE_DIR = CMakeFiles/CppDemoProject.dir/Source/Network
 
 build CMakeFiles/CppDemoProject.dir/Source/main.cpp.o: CXX_COMPILER__CppDemoProject_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/Source/main.cpp || cmake_object_order_depends_target_CppDemoProject
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
   DEP_FILE = CMakeFiles/CppDemoProject.dir/Source/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -isystem /opt/homebrew/include
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   OBJECT_FILE_DIR = CMakeFiles/CppDemoProject.dir/Source
+
+build CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o: CXX_COMPILER__CppDemoProject_unscanned_Debug /Users/chengangqiang/dev/CppDemoProject/Tests/test_libs.cpp || cmake_object_order_depends_target_CppDemoProject
+  DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
+  DEP_FILE = CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o.d
+  FLAGS = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/chengangqiang/dev/CppDemoProject/Include -I/Users/chengangqiang/dev/CppDemoProject/Include/Network -I/Users/chengangqiang/dev/CppDemoProject/Tests -I/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1 -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/CppDemoProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CppDemoProject.dir/Tests
 
 
 # =============================================================================
@@ -73,9 +81,9 @@ build CMakeFiles/CppDemoProject.dir/Source/main.cpp.o: CXX_COMPILER__CppDemoProj
 #############################################
 # Link the executable /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject
 
-build /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject: CXX_EXECUTABLE_LINKER__CppDemoProject_Debug CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o CMakeFiles/CppDemoProject.dir/Source/main.cpp.o | /opt/homebrew/lib/libboost_system-mt.dylib /opt/homebrew/lib/libboost_filesystem-mt.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libboost_atomic-mt.dylib
+build /Users/chengangqiang/dev/CppDemoProject/Build/Binaries/CppDemoProject: CXX_EXECUTABLE_LINKER__CppDemoProject_Debug CMakeFiles/CppDemoProject.dir/Source/Network/AutoUpdater.cpp.o CMakeFiles/CppDemoProject.dir/Source/main.cpp.o CMakeFiles/CppDemoProject.dir/Tests/test_libs.cpp.o | /opt/homebrew/lib/libboost_system-mt.dylib /opt/homebrew/lib/libboost_filesystem-mt.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd /Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib /opt/homebrew/lib/libboost_atomic-mt.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
-  LINK_LIBRARIES = /opt/homebrew/lib/libboost_system-mt.dylib  /opt/homebrew/lib/libboost_filesystem-mt.dylib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd  /opt/homebrew/lib/libboost_atomic-mt.dylib
+  LINK_LIBRARIES = -Wl,-rpath,/Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql  /opt/homebrew/lib/libboost_system-mt.dylib  /opt/homebrew/lib/libboost_filesystem-mt.dylib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd  /Users/chengangqiang/dev/CppDemoProject/ThirdParty/QuantLib-1.31.1/build/ql/libQuantLib.dylib  /opt/homebrew/lib/libboost_atomic-mt.dylib
   OBJECT_DIR = CMakeFiles/CppDemoProject.dir
   POST_BUILD = :
   PRE_LINK = :

@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Examples/MarketModels/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/QuantLib/examples",
+			"paths" : 
+			[
+				"Examples/MarketModels/MarketModels"
+			],
+			"targetId" : "MarketModels::@042c893150fe6e56f367",
+			"targetIndex" : 32,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Examples/MarketModels",
+		"source" : "Examples/MarketModels"
+	}
+}
