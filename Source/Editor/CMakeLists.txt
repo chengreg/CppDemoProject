@@ -58,8 +58,16 @@ endif()
 # 设置CMP0079策略为NEW
 cmake_policy(SET CMP0079 NEW)
 
+
+
+# 设置GLFW的路径
+set(GLFW_PATH "${MAIN_CMAKELISTS_TEXT_PATH}/ThirdParty/glfw-3.3.8")
+## 添加GLFW的头文件路径
+#include_directories(${GLFW_PATH}/include)
+## 添加GLFW库
+#target_link_libraries(Editor ${GLFW_PATH}/lib/libglfw3.a)
 # 使用 find_package 查找 GLFW
-find_package(glfw3 REQUIRED)
+find_package(glfw3 REQUIRED PATHS ${GLFW_PATH})
 
 # link lib, should install glfw first or prebuild lib and embed in project
 if (WIN32)
@@ -87,7 +95,7 @@ elseif (APPLE)
     )
 elseif (UNIX AND NOT APPLE)
     # linux: sudo apt install libglfw3-dev
-    target_link_libraries(${PROJECT_NAME}
+    target_link_libraries(Editor
             GL
             glfw # use this lib name
             dl
